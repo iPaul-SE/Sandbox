@@ -10,6 +10,8 @@ public class Cars
         cars.add(toyota);        
         cars.add(nissan);
         cars.add(ford);
+        
+        cars.processCars(cars);
     }
 
     public static void processCars(ArrayList<Car> cars)
@@ -18,6 +20,7 @@ public class Cars
     for (int i=0; i<cars.size(); i++)
     {
         int totalprice= cars.get(i).computeCars();
-        totalAmount=+ totalprice; 
+        totalAmount=+ totalprice;
+        System.out.println("Total Amount: "+totalAmount);
     }
 }
