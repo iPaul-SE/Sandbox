@@ -21,24 +21,3 @@ public class Cars
         totalAmount=+ totalprice; 
     }
 }
-
-
-class Car
-{
-    public Car (String name, int price, int, tax, int year)
-    {
-        constructor.......
-    }
-    
-    public int getPrice()
-    {
-        return price;
-    }
-
-    public int computeCars()
-    {
-        int  totalprice= price+tax;
-        System.out.println (name + "\t" +totalprice+"\t"+year );
-        return  totalprice; 
-    }
-}
