@@ -1,0 +1,17 @@
+class Car
+{
+    public Car(String name, int price, int, tax, int year)
+    {
+        this.name = name;
+        this.price = price;
+        this.tax = tax;
+        this.year = year;
+    }
+
+    public int computeCars()
+    {
+        int  totalprice = price + tax;
+        System.out.println(name + "\t" +totalprice+"\t"+year );
+        return totalprice;
+    } 
+}
