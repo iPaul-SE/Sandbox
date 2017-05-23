@@ -1,0 +1,44 @@
+public class Cars
+{
+    public static void main (String [] args)
+    {
+        Car toyota= new Car("Toyota", "$10000", "300"+ "2003");
+        Car nissan= new Car("Nissan", "$22000", "300"+ "2011");
+        Car ford= new Car("Ford", "$15000", "350"+ "2010");
+
+        ArrayList<Car> cars = new ArrayList<Car>();
+        cars.add(toyota);        
+        cars.add(nissan);
+        cars.add(ford);
+    }
+
+    public static void processCars(ArrayList<Car> cars)
+    {
+    int totalAmount=0;
+    for (int i=0; i<cars.size(); i++)
+    {
+        int totalprice= cars.get(i).computeCars();
+        totalAmount=+ totalprice; 
+    }
+}
+
+
+class Car
+{
+    public Car (String name, int price, int, tax, int year)
+    {
+        constructor.......
+    }
+    
+    public int getPrice()
+    {
+        return price;
+    }
+
+    public int computeCars()
+    {
+        int  totalprice= price+tax;
+        System.out.println (name + "\t" +totalprice+"\t"+year );
+        return  totalprice; 
+    }
+}
