@@ -1,0 +1,12 @@
+public class Regex {
+
+  public static void main(String[] args) {
+    
+    String s = "[abcdefg]";
+    String regex = "\\[|\\]";
+    s = s.replaceAll(regex, "");
+    System.out.println(s);
+  
+  }
+
+}
